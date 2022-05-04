@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../components/Footer'
+import FooterHome from '../components/FooterHome'
 import Navbar from "../components/Navbar"
 import DemoCarousel from '../components/Slider'
 
@@ -8,7 +8,7 @@ const Homepage = () => {
     <div>
       <Navbar/>
       <DemoCarousel/>
-      <Footer/>
+      <FooterHome/>
     </div>
   )
 }
