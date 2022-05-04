@@ -1,78 +1,77 @@
-.navbar{
-    height:130px;
-   
-    width:101%;
-    background-color: rgb(16,132,126);
-    margin-top: -10px;
-    margin-left: -8px;
+.navbar {
+  background-color: rgb(16, 132, 126);
+  height: 130px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* margin-top: -10px; */
+  margin-left: -8px;
 }
-.container_navbar{
-    display: flex;
-    margin-left: 100px;
-   padding-top: 20px;
+.container_navbar {
+  display: flex;
+  margin-left: 100px;
+  padding-top: 20px;
 }
-.inputBox{
-    background-color: white;
-    height: 50px;
-    width: 60%;
-    display: flex;
-    margin-left: 50px;
-    border-radius: 5px;
+.inputBox {
+  background-color: white;
+  height: 50px;
+  width: 60%;
+  display: flex;
+  margin-left: 50px;
+  border-radius: 5px;
 }
-.main_logo{
-    width: 10%;
+.main_logo {
+  width: 10%;
 }
 
-.pincode{
-    height: 45px;
-    font-size: 18px;
-    width: 24%;
-    border: none;
-    margin-left: 10px;
+.pincode {
+  height: 45px;
+  font-size: 18px;
+  width: 24%;
+  border: none;
+  margin-left: 10px;
 }
-.searchbar{
-    height: 45px;
-    width: 67%;
-    font-size: 18px;
-    margin-left: 10px;
-    border: none;
+.searchbar {
+  height: 45px;
+  width: 67%;
+  font-size: 18px;
+  margin-left: 10px;
+  border: none;
 }
-.straightbar{
-    margin-top: 2px;
-    color: rgb(232, 228, 228);
-    margin-left: 10px;
+.straightbar {
+  margin-top: 2px;
+  color: rgb(232, 228, 228);
+  margin-left: 10px;
 }
-.Container2_navbar{
-    display: flex;
-    
-    margin-top: 10px;
-}
-.navbar_products{
-    display: flex;
-    color: white;
-    font-family: sans-serif;
-    
-    margin-left:300px;
+.Container2_navbar {
+  display: flex;
 
+  margin-top: 10px;
 }
-.products_line{
-    margin-left: 30px;
-    cursor: pointer;
-   
-}
-.products_line{
-    display: flex;
-}
-.navbar_products2{
-    display: flex;
-    color: white;
-    font-family: sans-serif;
+.navbar_products {
+  display: flex;
+  color: white;
+  font-family: sans-serif;
 
-    margin-left:300px;
-    width: 400px;
-
+  margin-left: 300px;
 }
-.side_logo{
-    height: 30px;
-    margin-top: 10px;
+.products_line {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.products_line {
+  display: flex;
+}
+.navbar_products2 {
+  display: flex;
+  color: white;
+  font-family: sans-serif;
+
+  margin-left: 300px;
+  width: 400px;
+}
+.side_logo {
+  height: 30px;
+  margin-top: 10px;
 }
