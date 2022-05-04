@@ -14,9 +14,10 @@
 .inputBox{
     background-color: white;
     height: 50px;
-    width: 55%;
+    width: 60%;
     display: flex;
     margin-left: 20px;
+    border-radius: 10px;
 }
 .main_logo{
     width: 10%;
@@ -27,10 +28,11 @@
     font-size: 18px;
     width: 24%;
     border: none;
+    margin-left: 10px;
 }
 .searchbar{
     height: 45px;
-    width: 69%;
+    width: 67%;
     font-size: 18px;
     margin-left: 10px;
     border: none;

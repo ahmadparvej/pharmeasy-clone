@@ -9,7 +9,7 @@ const Navbar = () => {
          <div className={Styles.inputBox}>
            <input className={Styles.pincode} type='number' placeholder='PIN CODE'></input>
            <h1 className={Styles.straightbar}>|</h1>
-           <input className={Styles.searchbar} type="text" placeholder='Search Medicines/Healthcare products @18% Off'/>
+           <input className={Styles.searchbar}   type="text" placeholder='Search Medicines/Healthcare products @18% Off'/>
          </div>
       </div>
       <div>
