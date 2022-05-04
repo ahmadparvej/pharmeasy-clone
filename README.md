@@ -1,2 +1,0 @@
-# pharmeasy-clone
-Collaborative project
