@@ -1,5 +1,5 @@
 .navbar{
-    height:150px;
+    height:130px;
    
     width:110%;
     background-color: rgb(16,132,126);
@@ -8,7 +8,7 @@
 }
 .container_navbar{
     display: flex;
-    margin-left: 200px;
+    margin-left: 100px;
    padding-top: 20px;
 }
 .inputBox{
@@ -16,8 +16,8 @@
     height: 50px;
     width: 60%;
     display: flex;
-    margin-left: 20px;
-    border-radius: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
 }
 .main_logo{
     width: 10%;
@@ -39,6 +39,40 @@
 }
 .straightbar{
     margin-top: 2px;
-    color: grey;
+    color: rgb(232, 228, 228);
     margin-left: 10px;
+}
+.Container2_navbar{
+    display: flex;
+    
+    margin-top: 10px;
+}
+.navbar_products{
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    
+    margin-left:300px;
+
+}
+.products_line{
+    margin-left: 30px;
+    cursor: pointer;
+   
+}
+.products_line{
+    display: flex;
+}
+.navbar_products2{
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+
+    margin-left:300px;
+    width: 400px;
+
+}
+.side_logo{
+    height: 30px;
+    margin-top: 10px;
 }
