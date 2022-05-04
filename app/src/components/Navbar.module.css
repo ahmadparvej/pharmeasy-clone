@@ -1,10 +1,10 @@
 .navbar{
     height:130px;
    
-    width:110%;
+    width:101%;
     background-color: rgb(16,132,126);
     margin-top: -10px;
-    margin-left: -10px;
+    margin-left: -8px;
 }
 .container_navbar{
     display: flex;
