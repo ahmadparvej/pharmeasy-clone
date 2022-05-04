@@ -1,7 +1,42 @@
 .navbar{
     height:150px;
-    width:100%;
-    border:1px solid black;
+   
+    width:110%;
     background-color: rgb(16,132,126);
-    margin-top: 0px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.container_navbar{
+    display: flex;
+    margin-left: 200px;
+   padding-top: 20px;
+}
+.inputBox{
+    background-color: white;
+    height: 50px;
+    width: 55%;
+    display: flex;
+    margin-left: 20px;
+}
+.main_logo{
+    width: 10%;
+}
+
+.pincode{
+    height: 45px;
+    font-size: 18px;
+    width: 24%;
+    border: none;
+}
+.searchbar{
+    height: 45px;
+    width: 69%;
+    font-size: 18px;
+    margin-left: 10px;
+    border: none;
+}
+.straightbar{
+    margin-top: 2px;
+    color: grey;
+    margin-left: 10px;
 }
