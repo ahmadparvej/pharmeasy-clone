@@ -1,0 +1,98 @@
+{
+    "HealthCare_Products": [
+        {
+            "categoryName": "Personal Care",
+            "offer": 80,
+            "id":1,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1279753fc985369b8a8a5069f7fbe209.jpg",
+            "items":[
+            ]
+        },
+        {
+            "categoryName": "Health Food and Drink",
+            "offer": 80,
+            "id":2,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/b8832bde65de3cafbd8a84861b9b9d1d.jpg",
+            "items":[
+            ]
+        },
+        {
+            "categoryName": "Skin Care",
+            "offer": 50,
+            "id":3,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/8df738c0349d304480de421fd6c6c24f.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Home Care",
+            "offer": 35,
+            "id":4,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/47031d01e7ea3e1ead70342da6ace7ad.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Ayurvedic Care",
+            "offer": 50,
+            "id":5,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/25499457d849302885780222cd52b237.png",
+            "items":[
+            ]
+        },{
+            "categoryName": "Sexual Wellness",
+            "offer": 53,
+            "id":6,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/7be7b3ff31bf3d1bb5d374d984ddfc8b.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Fitness & Supplements",
+            "offer": 50,
+            "id":7,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/321bf75f9b693920b1a5a280b8db85e1.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Mother and Baby Care",
+            "offer": 50,
+            "id":8,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/b334c54f69763e129b4cc265de5d74a3.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Covid Essentials",
+            "offer": 77,
+            "id":9,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/0193fd80acd733bca44ea1fc3bfd74b3.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Health Condition",
+            "offer": 50,
+            "id":10,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6e38477688f1318a894ac3578ec544f9.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Diabetic Care",
+            "offer": 50,
+            "id":11,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/93445039fa903392a6b6e3cc1cf58b81.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Elderly Care",
+            "offer": 80,
+            "id":12,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/249fbf870f1b3c3a9fc7883f3828b137.jpg",
+            "items":[
+            ]
+        },{
+            "categoryName": "Pet Care",
+            "offer": 50,
+            "id":13,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9bc9c511ab293f1686007cf670ce6082.png",
+            "items":[
+            ]
+        }
+    ]
+}
