@@ -5,6 +5,7 @@ const initState ={
 }
 
 
+
 export const signUpReducer = (state = initState, {type, payload}) => {
     switch (type) {
         case SIGN_UP:
