@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Box = styled.div`
   padding: 20px;
   background: #f4f7fb;
-  margin-top: 200px;
+  margin-top: 20px;
   bottom: 0;
   width: 100%;
+  font-family: sans-serif;
 
   @media (max-width: 1000px) {
     padding: 70px 30px;
@@ -15,8 +16,9 @@ export const Box = styled.div`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  max-width: 1000px;
+  padding-left: 80px;
+  // justify-content: center;
+  // max-width: 1000px;
   // margin: 0 auto;
   /* background: red; */
 `;
@@ -26,6 +28,8 @@ export const Column = styled.div`
   flex-direction: column;
   text-align: left;
   margin-left: 60px;
+  width: 300px;
+  // border: 1px solid red;
 `;
 
 export const Row = styled.div`
