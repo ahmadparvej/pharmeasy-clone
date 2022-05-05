@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Styles from "./Navbar.module.css"
-
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
+
+  const navigate = useNavigate()
+  const handlSignup = ()=>{
+    navigate("/Signup")
+  }
   return (
     <div className={Styles.navbar}>
       <div className={Styles.container_navbar}>
@@ -51,6 +56,7 @@ const Navbar = () => {
             />
             <p>Offers</p>
           </div>
+<<<<<<< HEAD
 
           <Link
             to="signup"
@@ -66,6 +72,18 @@ const Navbar = () => {
               <p>Login / Signup</p>
             </div>
           </Link>
+=======
+          <div className={Styles.products_line}>
+            <img
+              className={Styles.side_logo}
+              src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
+              alt="login"
+            />
+             <div className="navPay_login" onClick={()=>handlSignup()}>                      
+              <span>Login&nbsp;/&nbsp;Signup</span>
+             </div>
+          </div>
+>>>>>>> 8e918e60b3eae478e78f82f33fee824a90f452ff
           <div className={Styles.products_line}>
             <img
               className={Styles.side_logo}
