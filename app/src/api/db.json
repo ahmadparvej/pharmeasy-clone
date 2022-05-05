@@ -1,0 +1,109 @@
+{
+    "HealthCare_Products": [
+        {
+            "categoryName": "Personal Care",
+            "offer": 80,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1279753fc985369b8a8a5069f7fbe209.jpg",
+            "items":[{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1643884067.jpg",
+                "title":"Calcimax Forte Plus Strip Of 30 Tablets",
+                "MRP":270,
+                "price":216
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/T70695/supradyn-daily-multivitamin-tablets-15s-1-1641793954.jpg",
+                "title":"Supradyn Daily Multivitamin Tablets 15s",
+                "MRP":50,
+                "price":45
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1643883399.jpg",
+                "title":"Becozym C Forte ( Vitamin B Complex + Biotin + Vitamin C )- Strip Of 15 Tablets",
+                "MRP":25,
+                "price":23
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/G59900/evecare-refreshing-intimate-wash-for-women-90ml-2-1646136010.jpg",
+                "title":"Evecare Refreshing Intimate Wash For Women - 90ml",
+                "MRP":165,
+                "price":138
+            }
+            ]
+        },{
+            "categoryName": "Health Food and Drinks",
+            "offer": 80,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1279753fc985369b8a8a5069f7fbe209.jpg",
+            "items":[{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1643884067.jpg",
+                "title":"Calcimax Forte Plus Strip Of 30 Tablets",
+                "MRP":270,
+                "price":216
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/T70695/supradyn-daily-multivitamin-tablets-15s-1-1641793954.jpg",
+                "title":"Supradyn Daily Multivitamin Tablets 15s",
+                "MRP":50,
+                "price":45
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1643883399.jpg",
+                "title":"Becozym C Forte ( Vitamin B Complex + Biotin + Vitamin C )- Strip Of 15 Tablets",
+                "MRP":25,
+                "price":23
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/G59900/evecare-refreshing-intimate-wash-for-women-90ml-2-1646136010.jpg",
+                "title":"Evecare Refreshing Intimate Wash For Women - 90ml",
+                "MRP":165,
+                "price":138
+            }
+            ]
+        },{
+            "categoryName": "Personal Care",
+            "offer": 80,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1279753fc985369b8a8a5069f7fbe209.jpg",
+            "items":[{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1643884067.jpg",
+                "title":"Calcimax Forte Plus Strip Of 30 Tablets",
+                "MRP":270,
+                "price":216
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/T70695/supradyn-daily-multivitamin-tablets-15s-1-1641793954.jpg",
+                "title":"Supradyn Daily Multivitamin Tablets 15s",
+                "MRP":50,
+                "price":45
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1643883399.jpg",
+                "title":"Becozym C Forte ( Vitamin B Complex + Biotin + Vitamin C )- Strip Of 15 Tablets",
+                "MRP":25,
+                "price":23
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/G59900/evecare-refreshing-intimate-wash-for-women-90ml-2-1646136010.jpg",
+                "title":"Evecare Refreshing Intimate Wash For Women - 90ml",
+                "MRP":165,
+                "price":138
+            }
+            ]
+        },{
+            "categoryName": "Health Food and Drinks",
+            "offer": 80,
+            "img":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1279753fc985369b8a8a5069f7fbe209.jpg",
+            "items":[{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1643884067.jpg",
+                "title":"Calcimax Forte Plus Strip Of 30 Tablets",
+                "MRP":270,
+                "price":216
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/T70695/supradyn-daily-multivitamin-tablets-15s-1-1641793954.jpg",
+                "title":"Supradyn Daily Multivitamin Tablets 15s",
+                "MRP":50,
+                "price":45
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1643883399.jpg",
+                "title":"Becozym C Forte ( Vitamin B Complex + Biotin + Vitamin C )- Strip Of 15 Tablets",
+                "MRP":25,
+                "price":23
+            },{
+                "image":"https://cdn01.pharmeasy.in/dam/products_otc/G59900/evecare-refreshing-intimate-wash-for-women-90ml-2-1646136010.jpg",
+                "title":"Evecare Refreshing Intimate Wash For Women - 90ml",
+                "MRP":165,
+                "price":138
+            }
+            ]
+        }
+    ]
+}
