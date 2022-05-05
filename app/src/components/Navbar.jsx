@@ -56,9 +56,8 @@ const Navbar = () => {
             />
             <p>Offers</p>
           </div>
-<<<<<<< HEAD
 
-          <Link
+          {/* <Link
             to="signup"
             className={Styles.products_line}
             style={{ textDecoration: "none", color: "white" }}
@@ -71,8 +70,7 @@ const Navbar = () => {
               />
               <p>Login / Signup</p>
             </div>
-          </Link>
-=======
+          </Link> */}
           <div className={Styles.products_line}>
             <img
               className={Styles.side_logo}
@@ -83,7 +81,6 @@ const Navbar = () => {
               <span>Login&nbsp;/&nbsp;Signup</span>
              </div>
           </div>
->>>>>>> 8e918e60b3eae478e78f82f33fee824a90f452ff
           <div className={Styles.products_line}>
             <img
               className={Styles.side_logo}

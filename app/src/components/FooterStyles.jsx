@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  padding: 20px;
+  // padding: 40px;
   background: #f4f7fb;
   margin-top: 20px;
   bottom: 0;
@@ -64,4 +64,10 @@ export const Heading = styled.p`
 export const Img = styled.img`
 borderRadius: 50%,
 width: 50px,
+`;
+
+export const Last = styled.div`
+  // display: "flex";
+  // justify-content: "space-between";
+  
 `;
