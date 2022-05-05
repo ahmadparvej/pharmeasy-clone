@@ -15,6 +15,7 @@ function App() {
         <Route path="healthcare-products" element={<HealthCareProducts />} />
       </Routes>
       <Footer />
+      
     </div>
   );
 }

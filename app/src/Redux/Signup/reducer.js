@@ -12,4 +12,4 @@ export const signUpReducer = (state = initState, {type, payload}) => {
         default:
         return state;
     }
-}
+};

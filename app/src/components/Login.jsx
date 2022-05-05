@@ -10,18 +10,12 @@ const Login = () => {
     const navigate = useNavigate();
   const [updateform, setUpdateform] = useState("");
 
-
-
   const Handlechange = (e) => {
     const { name, value } = e.target;
     setUpdateform({ ...updateform, [name]: value });
     // console.log(updateform);
   };
 
-
-
-
-  
   const checkLogin = async (e) => {
     e.preventDefault();
     let cdata = await fetch("http://localhost:8080/posts");
