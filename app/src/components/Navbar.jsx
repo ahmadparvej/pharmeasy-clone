@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Styles from "./Navbar.module.css"
 
 const Navbar = () => {
@@ -29,7 +30,9 @@ const Navbar = () => {
       <div className={Styles.Container2_navbar}>
         <div className={Styles.navbar_products}>
           <p className={Styles.products_line}>Order Medicine</p>
-          <p className={Styles.products_line}>Healthcare Products</p>
+          <Link to="healthcare-products" className={Styles.products_line} style={{textDecoration:"none", color:"white"}} >
+            <p className={Styles.products_line}>Healthcare Products</p>
+          </Link>
           <p className={Styles.products_line}>Lab Tests</p>
           <p className={Styles.products_line}>RTPCR</p>
         </div>
@@ -65,3 +68,6 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+{/* <p className={Styles.products_line}>Healthcare Products</p> */}
