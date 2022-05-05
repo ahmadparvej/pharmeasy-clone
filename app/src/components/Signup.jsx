@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
 import "./Signup.css"
 
 const Signup = () => {
@@ -44,7 +44,7 @@ const Signup = () => {
 
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="top-signup">
         <div className="singup_form">
                  <div className='wel_Login_btn'>

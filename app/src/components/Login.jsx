@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
- import Navbar from './Navbar'
+//  import Navbar from './Navbar'
 import "./Login.css"
 import { useNavigate } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="top-login">
             <div className="login_form">
                 <div className="login_title">Welcome</div>
