@@ -68,6 +68,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-{/* <p className={Styles.products_line}>Healthcare Products</p> */}
