@@ -1,6 +1,9 @@
-import {LOG_IN} from "./actionType";
+import { SIGN_UP } from "./actionType";
 
-export const logIn=(data)=>({
-    type:LOG_IN,
-    payload:data,
+
+
+
+export const SignUp = (data) => ({
+    type : SIGN_UP,
+    payload: data
 })

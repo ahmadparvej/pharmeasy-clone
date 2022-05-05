@@ -1,16 +1,15 @@
-import {LOG_IN} from "./actionType";
+import { SIGN_UP } from "./actionType"
 
-const initState={
-    showlogin:false,
+const initState ={
+    showsignup: false,
 }
 
 
-export const loginReducer=(state=initState,{type,payload})=>{
-    switch(type){
-        case LOG_IN:
-            return {...state,showlogin:payload}
-
-            default:
-                return state;
+export const signUpReducer = (state = initState, {type, payload}) => {
+    switch (type) {
+        case SIGN_UP:
+            return { ...state, showsignup: payload};
+        default:
+        return state;
     }
 }
