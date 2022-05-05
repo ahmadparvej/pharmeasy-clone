@@ -21,7 +21,7 @@ const FooterMiddle = () => {
         PharmEasy is here to help you take it easy! We are amongst one of
         India's top online pharmacy and medical care platforms. It enables you
         to order pharmaceutical and{" "}
-        <Insidelink href="https://pharmeasy.in/health-care">
+        <Insidelink href="#">
           healthcare products online
         </Insidelink>{" "}
         by connecting you to registered retail pharmacies and get them delivered
@@ -37,7 +37,7 @@ const FooterMiddle = () => {
         Noida, Pune, etc. Our online medical store also allows you to choose
         from 1 lakh+ products incl. OTC products and medical equipment.
         PharmEasy is a one-stop online medical platform where you can also book
-        <Insidelink href="https://pharmeasy.in/diagnostics">
+        <Insidelink href="#">
           {" "}
           diagnostic tests
         </Insidelink>{" "}
@@ -53,7 +53,7 @@ const FooterMiddle = () => {
         via various payment wallets at a discounted price. Alternatively, you
         can also choose to pay cash on delivery as we deliver the products at
         your doorstep. We cater to all your pharmaceutical needs and also make{" "}
-        <Insidelink href="https://pharmeasy.in/online-medicine-order">
+        <Insidelink href="#">
           ordering medicines online
         </Insidelink>{" "}
         a hassle-free experience for you. We connect you only with registered
