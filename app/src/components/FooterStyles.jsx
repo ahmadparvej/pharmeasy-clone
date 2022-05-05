@@ -16,7 +16,7 @@ export const Box = styled.div`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
+  padding-left: 60px;
   // justify-content: center;
   // max-width: 1000px;
   // margin: 0 auto;

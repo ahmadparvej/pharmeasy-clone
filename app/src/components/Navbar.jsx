@@ -6,11 +6,13 @@ const Navbar = () => {
   return (
     <div className={Styles.navbar}>
       <div className={Styles.container_navbar}>
-        <img
-          className={Styles.main_logo}
-          src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
-          alt="logo"
-        ></img>
+       
+          <img
+            className={Styles.main_logo}
+            src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
+            alt="logo"
+          ></img>
+        
         <div className={Styles.inputBox}>
           <input
             className={Styles.pincode}
@@ -30,7 +32,11 @@ const Navbar = () => {
       <div className={Styles.Container2_navbar}>
         <div className={Styles.navbar_products}>
           <p className={Styles.products_line}>Order Medicine</p>
-          <Link to="healthcare-products" className={Styles.products_line} style={{textDecoration:"none", color:"white"}} >
+          <Link
+            to="healthcare-products"
+            className={Styles.products_line}
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <p className={Styles.products_line}>Healthcare Products</p>
           </Link>
           <p className={Styles.products_line}>Lab Tests</p>
@@ -45,14 +51,21 @@ const Navbar = () => {
             />
             <p>Offers</p>
           </div>
-          <div className={Styles.products_line}>
-            <img
-              className={Styles.side_logo}
-              src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
-              alt="login"
-            />
-            <p>Login / Signup</p>
-          </div>
+
+          <Link
+            to="signup"
+            className={Styles.products_line}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div className={Styles.products_line}>
+              <img
+                className={Styles.side_logo}
+                src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
+                alt="login"
+              />
+              <p>Login / Signup</p>
+            </div>
+          </Link>
           <div className={Styles.products_line}>
             <img
               className={Styles.side_logo}
