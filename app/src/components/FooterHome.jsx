@@ -7,7 +7,7 @@ const FooterHome = () => {
       <div className={Styles.footer1}>
         <div className={Styles.part1}>
           <h2 className={Styles.footerline1}>
-            Simplifying Healthcare, Impacting Lives
+            Simplifying Healthcare, Impacting Livesh
           </h2>
           <h2 className={Styles.footerline2}>Download the App for free</h2>
           <div>
