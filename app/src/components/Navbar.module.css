@@ -1,12 +1,12 @@
 .navbar {
   background-color: rgb(16, 132, 126);
   height: 130px;
-  /* overflow: hidden;
-  position: fixed; */
+ 
+  position: sticky; 
   /* top: 0; */
-  width: 100%;
-  /* margin-top: -10px; */
-  margin-left: -8px;
+  width: 101%;
+  margin-top: -10px;
+  margin-left: -4px;
 }
 .container_navbar {
   display: flex;
