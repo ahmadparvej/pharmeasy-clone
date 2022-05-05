@@ -1,7 +1,7 @@
 
 let initState = {data:[]}
 
-export const reducer = (state=initState,action)=>{
+export const getDataReducer = (state=initState,action)=>{
     switch (action.type) {
         case "GET_DATA":
             return {

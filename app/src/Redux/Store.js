@@ -1,6 +1,8 @@
-import { legacy_createStore as createStore ,applyMiddleware,compose} from "redux";
-import thunk from "redux-thunk";
-import { reducer } from "./Products/Reducer";
+import { legacy_createStore as createStore ,applyMiddleware,compose,combineReducers} from "redux";
+import { getDataReducer } from "./Products/Reducer";
+import thunk from 'redux-thunk';
+import { signUpReducer } from "./Signup/reducer";
+import { loginReducer } from "./Login/reducer";
 
 
 const composeEnhancers =
@@ -14,4 +16,11 @@ const enhancer = composeEnhancers(
   applyMiddleware(thunk),
   // other store enhancers if any
 );
-export const store = createStore(reducer, enhancer);
+
+// const mainReducer = combineReducers({
+//   loginState : loginReducer,
+//   signupState : signUpReducer,
+//   getDataReducer:getDataReducer
+// });
+
+export const store = createStore(getDataReducer, enhancer);
