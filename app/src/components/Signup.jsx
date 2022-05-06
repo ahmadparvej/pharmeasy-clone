@@ -1,87 +1,96 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-// import Navbar from './Navbar'
-import "./Signup.css"
+import React,{useState} from 'react'
+import {Alert} from 'react-bootstrap';
+import Login from './Login';
+import './Signup.css';
+import "/node_modules/bootstrap/dist/css/bootstrap.css";
 
-const Signup = () => {
+const Registration = () => {
+   
+    const [name,setName]=useState("");
 
+    const [email,setEmail]=useState("");
 
-  const navigate = useNavigate();
-  const [form, setForm] = useState("");
+    const [password,setPassword]=useState("");
 
-  const Handlechange = (e) => {
-    // console.log(e.target.value)
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-    console.log(value.length)
-  };
-  const Handleclick = (e) => {
-    e.preventDefault();
-    // console.log(form);
+    const [phone,setPhone]=useState("");
 
-    fetch(`http://localhost:8080/posts`, {
-      method: "POST",
-      body: JSON.stringify(form),
-      headers: {
-        "content-type": "application/json",
-      },
-    });
+    const [flag,setFlag]=useState(false);
 
-    setTimeout(() => {
-      navigate("/Login");
-    }, 3000);
-  };
+    const [login,setLogin]=useState(true);
 
-  const handlLogin = () =>{
-    setTimeout(() => {
-        navigate("/Login");
-      }, 1000);
-  }
+    function handleSubmit(e) {
+        e.preventDefault();
 
-//   const gotoLog = () => {
-//     navigate("/login");
-//   };
+        if(!name|| !email ||!password ||!phone){
+            setFlag(true);
+
+        }
+        else{
+            setFlag(false);
+            localStorage.setItem("Email",JSON.stringify(email));
+            localStorage.setItem("Password",JSON.stringify(password));
+            console.log("Saved in LS");
+            setLogin(!login);
+
+        }
+
+    }
+    function handleClick(){
+        setLogin(!login);
+    }
 
   return (
     <div>
-        {/* <Navbar /> */}
-        <div className="top-signup">
-        <div className="singup_form">
-                 <div className='wel_Login_btn'>
-                    <div className="signup_title">Welcome</div>
-                    <div><button onClick={()=>handlLogin()} className="Login_btn">Login</button></div>
-                 </div>
+           <div className='outer'>
+           <div className='inner'>
+        {login ? (
 
-                <div className="signup_subtitle">Let's create your account!</div>
-                <div className="signup_input-container sn_ic1">
-                    <input 
-                    onChange={Handlechange} 
-                    name="Name"
-                    id="firstname" className="signup_input" type="text" placeholder=" " />
-                    <div className="signup_cut"></div>
-                    <label for="firstname" className="signup_placeholder">First name</label>
-                </div>
-                <div className="signup_input-container sn_ic2">
-                    <input 
-                    onChange={Handlechange}
-                    name="Email"
-                    id="email" className="signup_input" type="text" placeholder=" " />
-                    <div className="signup_cut signup_cut-short"></div>
-                    <label for="email" className="signup_placeholder">Email</label>
-                </div>
-                <div className="signup_input-container sn_ic2">
-                    <input 
-                    onChange={Handlechange}
-                    name="Password"
-                    id="password" className="signup_input" type="password" placeholder=" " />
-                    <div className="signup_cut"></div>
-                    <label for="password" className="signup_placeholder">Password</label>
-                </div>
-                    <button onClick={Handleclick} type="text" className="signup_submit">Sign Up</button>
+        <form onSubmit={handleSubmit}>
+            <h1>Register</h1>
+            <div className='form-group'>
+                <label>Name</label>
+                <input type='text' className='form-control'
+                 placeholder='Enter full Name'
+                 onChange={(event)=> setName(event.target.value)} />
+
             </div>
+            <div className='form-group'>
+                <label>Email</label>
+                <input type='text' className='form-control'
+                 placeholder='Enter mail'
+                 onChange={(event)=> setEmail(event.target.value)} />
+                
+            </div>
+            <div className='form-group'>
+                <label>Password</label>
+                <input type='password' className='form-control'
+                 placeholder='Enter Password'
+                 onChange={(event)=> setPassword(event.target.value)} />
+                
+            </div>
+            <div className='form-group'>
+                <label>Phone number</label>
+                <input type='text' className='form-control'
+                 placeholder='Enter mobile number'
+                 onChange={(event)=> setPhone(event.target.value)} />
+                
+            </div>
+            <button type="submit" className='s'>Submit</button>
+            <p className='hint' onClick={handleClick} >Alread Registered login ?</p>
+
+            {flag && (
+               <Alert color ="primary" variant='danger'>
+                  Please Fill Every Field 
+               </Alert> 
+            )}
+        </form>
+        ):(
+            <Login />
+        )}
+        </div>
         </div>
     </div>
   )
 }
 
-export default Signup
+export default Registration
