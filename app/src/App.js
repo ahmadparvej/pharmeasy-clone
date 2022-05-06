@@ -7,7 +7,6 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 // import OTP from "./Pages/OTP"
 
-
 function App() {
   return (
     <div style={{ overflowX: "hidden" }}>
