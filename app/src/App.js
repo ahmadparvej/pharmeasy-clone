@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // import Login from "./components/Login";
 import Signup from "./components/Signup";
-
+// import OTP from "./Pages/OTP"
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
       </Routes>
       <Footer />
+      {/* <OTP/> */}
 
     </div>
   );
