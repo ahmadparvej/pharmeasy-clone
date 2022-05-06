@@ -3,8 +3,8 @@ import {Alert} from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
 import './Signup.css';
 import "/node_modules/bootstrap/dist/css/bootstrap.css";
+// import Homepage from '../Pages/Homepage';
 
-import Homepage from '../Pages/Homepage';
 const Login = () => {
 
 const [emaillog,setEmaillog]=useState("");

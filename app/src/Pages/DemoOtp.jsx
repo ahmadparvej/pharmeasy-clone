@@ -1,9 +1,39 @@
-import React from "react";
+// import React, { Component } from "react";
+// import OtpInput from "react-otp-input";
 // import { useNavigate } from "react-router-dom";
+
+// export default class App extends Component {
+//     state = { otp: "" };
+
+//     navigate = useNavigate
+
+//   handleChange = (otp) => this.setState({ otp });
+
+//     handleClick = () => {
+//         let path = `success`;
+//         this.navigate(path);
+//     }
+
+//   render() {
+//     return (
+//       <div >
+//         <OtpInput
+//           style={{ margin: "auto" }}
+//           value={this.state.otp}
+//           onChange={this.handleChange}
+//           numInputs={4}
+//           separator={<span>-</span>}
+//         />
+//         <button onClick={ this.handleClick}>Submit</button>
+//       </div>
+//     );
+//   }
+// }
+
+import React from "react";
 import "./OTP.css";
 
 class Otpinput extends React.Component {
-  // navigate = this.useNavigate()
   constructor(props) {
     super(props);
     this.state = {
@@ -27,8 +57,6 @@ class Otpinput extends React.Component {
     const data = new FormData(event.target);
     console.log(this.state);
     event.preventDefault();
-    // this.Navigate("success");
-    // window.location('success')
   }
 
   inputfocus = (elmnt) => {
