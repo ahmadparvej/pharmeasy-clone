@@ -7,6 +7,7 @@ import {
   FooterLink,
   Heading,
   Img,
+  Last,
 } from "./FooterStyles";
 
 const Footer = () => {
@@ -125,6 +126,82 @@ const Footer = () => {
           </Column>
         </Row>
       </Container>
+
+      <div style={{ paddingBottom: "80px" }}>
+        <p style={{ marginLeft: "30px",marginTop:"20px" }}>Our Payment Partners</p>
+        <Last
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <div style={{ marginLeft: "30px" }}>
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg"
+              alt=""
+              style={{ width: "70px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg"
+              alt=""
+              style={{ width: "70px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg"
+              alt=""
+              style={{ width: "50px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg"
+              alt=""
+              style={{ width: "40px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg"
+              alt=""
+              style={{ width: "50px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg"
+              alt=""
+              style={{ width: "45px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg"
+              alt=""
+              style={{ width: "50px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg"
+              alt=""
+              style={{ width: "55px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg"
+              alt=""
+              style={{ width: "55px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg"
+              alt=""
+              style={{ width: "70px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg"
+              alt=""
+              style={{ width: "70px" }}
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg"
+              alt=""
+              style={{ width: "50px" }}
+            />
+          </div>
+          <p style={{ marginRight: "30px" }}>
+            © 2022 PharmEasy. All Rights Reserved
+          </p>
+        </Last>
+      </div>
     </Box>
   );
 };

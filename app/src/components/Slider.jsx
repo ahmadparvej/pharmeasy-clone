@@ -18,7 +18,6 @@ class DemoCarousel extends Component {
                 </div>
                 <div>
                     <img src="https://cms-contents.pharmeasy.in/banner/85955054ec0-Surgicare_Dweb_1.jpg?dim=1440x0&dpr=1.25&q=100" alt="img-1" />
-                    
                 </div>
                 <div>
                     <img src="https://cms-contents.pharmeasy.in/banner/7400d70904b-DWEB.jpg?dim=1440x0&dpr=1.25&q=100" alt="img-1" /> 
