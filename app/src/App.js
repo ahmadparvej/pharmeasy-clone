@@ -7,13 +7,12 @@ import { SingleProdCategory } from "./Pages/SingleProdCategory";
 import { AddToCart } from "./Pages/AddToCart";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-// import OTP from "./Pages/OTP"
+import OTP from "./Pages/OTP"
 
 function App() {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Navbar />
-      {/* <Homepage /> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="healthcare-products" element={<HealthCareProducts />} />
@@ -22,10 +21,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/addtocart" element={<AddToCart/>} />
+        <Route path="/otp" element={<OTP />} />
       </Routes>
       <Footer />
-      {/* <OTP/> */}
-
     </div>
   );
 }
