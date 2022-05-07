@@ -30,7 +30,7 @@ export const ProdCategory = ({item}) => {
     const navigate = useNavigate();
     return (
         <div>
-            <CategoryDiv >
+            <CategoryDiv onClick={()=>navigate(`${item.id}`)}>
                 <StyledImg src={item.img} alt={item.categoryName}></StyledImg>
                 <Styledh2>{item.categoryName}</Styledh2>
                 <StyledP>Upto {item.offer}% off</StyledP>

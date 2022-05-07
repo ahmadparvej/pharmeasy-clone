@@ -16,6 +16,7 @@ const enhancer = composeEnhancers(
   applyMiddleware(thunk),
   // other store enhancers if any
 );
+const rootReducer = combineReducers({loginState:loginReducer,signupState:signUpReducer,getDataReducer})
 
 // const mainReducer = combineReducers({
 //   loginState : loginReducer,
@@ -23,4 +24,4 @@ const enhancer = composeEnhancers(
 //   getDataReducer:getDataReducer
 // });
 
-export const store = createStore(getDataReducer, enhancer);
+export const store = createStore(rootReducer, enhancer);

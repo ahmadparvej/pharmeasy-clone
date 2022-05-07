@@ -13,13 +13,12 @@ const StyledProdList = styled.div`
 export const HealthCareProducts = () => {
     const navigate = useNavigate(); 
     const dispatch = useDispatch();
-    const { data } = useSelector((state) => state);
+    const { data } = useSelector((state) => state.getDataReducer);
     React.useEffect(() => {
         dispatch(getData())
     }, [dispatch])
     return (
         <div>
-            <h2>PharmEasy.com</h2>
             <StyledProdList>
                 {data.map((item) => {
                     return <ProdCategory key={item.id} item={item} />
