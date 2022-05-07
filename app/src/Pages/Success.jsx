@@ -7,9 +7,10 @@ function Success() {
   const handleClick = () => {
       navigate('/')
   }
-//   document.getElementById("order").innerHTML = Math.round(
-//     Math.random() * 3311000
-//   );
+
+    let id = Math.round(
+    Math.random() * 3311000
+  );
 
   return (
     <Box>
@@ -19,7 +20,7 @@ function Success() {
       />
       <h2>Thank you for your purchase!</h2>
       <p>
-        Your order id: <span id="order"></span>
+              Your order id: <span id="order">{id }</span>
       </p>
 
       <Button onClick={handleClick}>Continue Shopping</Button>
