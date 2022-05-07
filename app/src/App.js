@@ -8,6 +8,7 @@ import { AddToCart } from "./Pages/AddToCart";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import OTP from "./Pages/OTP"
+import Success from "./Pages/Success";
 
 function App() {
   return (
@@ -22,8 +23,10 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/addtocart" element={<AddToCart/>} />
         <Route path="/otp" element={<OTP />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
       <Footer />
+      {/* <Success /> */}
     </div>
   );
 }
