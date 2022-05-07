@@ -76,7 +76,7 @@ const Registration = () => {
                 
             </div>
             <button type="submit" className='s'>Submit</button>
-            <p className='hint' onClick={handleClick} >Alread Registered login ?</p>
+            <p className='hint' onClick={handleClick} >Already Registered login ?</p>
 
             {flag && (
                <Alert color ="primary" variant='danger'>

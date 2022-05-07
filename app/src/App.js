@@ -11,7 +11,6 @@ function App() {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Navbar />
-      {/* <Homepage /> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/healthcare-products" element={<HealthCareProducts />} />
@@ -20,7 +19,6 @@ function App() {
       </Routes>
       <Footer />
       {/* <OTP/> */}
-
     </div>
   );
 }
