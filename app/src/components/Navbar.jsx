@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Styles from "./Navbar.module.css"
+import { useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
 
@@ -8,6 +9,7 @@ const Navbar = () => {
   const handlSignup = ()=>{
     navigate("/Signup")
   }
+  const count = useSelector(state=>state.cartCountReducer.count);
   return (
     <div className={Styles.navbar}>
       <div className={Styles.container_navbar}>
@@ -87,7 +89,7 @@ const Navbar = () => {
               src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
               alt="cart"
             />
-            <p>Cart</p>
+            <p>{count}</p>
           </div>
         </div>
       </div>

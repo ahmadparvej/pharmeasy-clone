@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useDispatch } from "react-redux";
+import { increaseCartCount,decreaseCartCount } from "../Redux/Cart/action";
 const Container = styled.div`
     display:flex;
     width:80%;
@@ -28,10 +30,12 @@ font-weight: 700;
 border:none;
 padding:0 20px`
 export const AddToCart = () => {
+    let dispatch = useDispatch();
     let item = JSON.parse(localStorage.getItem("item"));
     let handleAddToCart = ()=>{
         let cart = JSON.parse(localStorage.getItem("cart"))||[];
         cart.push(item);
+        dispatch(increaseCartCount(1))
         localStorage.setItem("cart",JSON.stringify(cart));
     }
   return (
