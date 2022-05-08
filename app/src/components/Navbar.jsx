@@ -56,7 +56,7 @@ const Navbar = () => {
               src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
               alt="offers"
             />
-            <p>Offers</p>
+            <p className={Styles.specialLine}>Offers</p>
           </div>
 
           {/* <Link
@@ -80,7 +80,7 @@ const Navbar = () => {
               alt="login"
             />
              <div className="navPay_login" onClick={()=>handlSignup()}>                      
-              <span>Login&nbsp;/&nbsp;Signup</span>
+              <span >Login&nbsp;/&nbsp;Signup</span>
              </div>
           </div>
           <div className={Styles.products_line}>
