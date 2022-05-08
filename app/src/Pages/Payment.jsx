@@ -1,45 +1,82 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Payment.css";
 
-export const ProductDisplay = () => (
-  <section>
-    <div className="product">
-      <img
-        src="https://i.imgur.com/EHyR2nP.png"
-        alt="The cover of Stubborn Attachments"
-      />
-      <div className="description">
-        <h3>Stubborn Attachments</h3>
-        <h5>$20.00</h5>
-      </div>
+function Payment() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/otp");
+  };
+
+  return (
+    <div id="Paybody">
+      <form id="Payform">
+        <h3>Enter Card Details</h3>
+        <div className="Pay-nav-bar"></div>
+        <div className="all">
+          <label className="ladal">Card Number</label>
+          <input
+            classNameName="Pay-input"
+            type="number"
+            placeholder="Card Number"
+            id="cardnum"
+            maxlength="9"
+          />
+        </div>
+        <div>
+          <label className="ladal">Expiry Date</label>
+          <div className="all" id="Paydatediv">
+            <input
+              classNameName="Pay-input"
+              type="text"
+              id="month"
+              placeholder="MM"
+              maxlength="2"
+              oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+            />
+            <p id="Payslash">/</p>
+            <input
+              classNameName="Pay-input"
+              type="text"
+              id="year"
+              placeholder="YY"
+              maxlength="2"
+              oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+            />
+          </div>
+        </div>
+
+        <div className="all">
+          <label className="ladal">CVV</label>
+          <input
+            classNameName="Pay-input"
+            type="text"
+            id="cvv"
+            placeholder="•••"
+            maxlength="3"
+            oninput="this.value=this.value.replace(/[^000-999]/g,'');"
+          />
+        </div>
+
+        <div className="all">
+          <label className="ladal">Name</label>
+          <input
+            classNameName="Pay-input"
+            type="text"
+            id="name"
+            placeholder="Enter Cardholder's Full Name"
+          />
+        </div>
+        <input
+          classNameName="Pay-input"
+          onClick={handleClick}
+          type="submit"
+          value="PAY"
+        />
+      </form>
     </div>
-    <form action="/create-checkout-session" method="POST">
-      <button type="submit">Checkout</button>
-    </form>
-  </section>
-);
-
-const Message = ({ message }) => (
-  <section>
-    <p>{message}</p>
-  </section>
-);
-
-export default function Payment() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    const query = new URLSearchParams(window.location.search);
-
-    if (query.get("success")) {
-      setMessage("Order placed! You will receive an email confirmation.");
-    }
-
-    if (query.get("canceled")) {
-      setMessage(
-        "Order canceled -- continue to shop around and checkout when you're ready."
-      );
-    }
-  }, []);
-
-  return message ? <Message message={message} /> : <ProductDisplay />;
+  );
 }
+
+export default Payment;

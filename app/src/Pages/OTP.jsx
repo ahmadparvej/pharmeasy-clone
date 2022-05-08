@@ -4,6 +4,7 @@ import "./OTP.css";
 
 class Otpinput extends React.Component {
   // navigate = this.useNavigate()
+
   constructor(props) {
     super(props);
     this.state = {
