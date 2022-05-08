@@ -25,7 +25,7 @@ const Navbar = () => {
             className={Styles.pincode}
             type="text"
             placeholder="PIN CODE"
-            maxlength="6"
+            maxLength="6"
           ></input>
           <h1 className={Styles.straightbar}>|</h1>
           <input

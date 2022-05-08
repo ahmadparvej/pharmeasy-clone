@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Payment.css";
+import { Box, Form, Input, Label } from "./PaymentStyles";
 
 function Payment() {
   const navigate = useNavigate();
@@ -10,13 +11,13 @@ function Payment() {
   };
 
   return (
-    <div id="Paybody">
-      <form id="Payform">
+    <Box>
+      <Form>
         <h3>Enter Card Details</h3>
         <div className="Pay-nav-bar"></div>
         <div className="all">
-          <label className="ladal">Card Number</label>
-          <input
+          <Label className="ladal">Card Number</Label>
+          <Input
             classNameName="Pay-input"
             type="number"
             placeholder="Card Number"
@@ -25,9 +26,9 @@ function Payment() {
           />
         </div>
         <div>
-          <label className="ladal">Expiry Date</label>
+          <Label className="ladal">Expiry Date</Label>
           <div className="all" id="Paydatediv">
-            <input
+            <Input
               classNameName="Pay-input"
               type="text"
               id="month"
@@ -36,7 +37,7 @@ function Payment() {
               oninput="this.value=this.value.replace(/[^00-99]/g,'');"
             />
             <p id="Payslash">/</p>
-            <input
+            <Input
               classNameName="Pay-input"
               type="text"
               id="year"
@@ -48,8 +49,8 @@ function Payment() {
         </div>
 
         <div className="all">
-          <label className="ladal">CVV</label>
-          <input
+          <Label className="ladal">CVV</Label>
+          <Input
             classNameName="Pay-input"
             type="text"
             id="cvv"
@@ -60,22 +61,22 @@ function Payment() {
         </div>
 
         <div className="all">
-          <label className="ladal">Name</label>
-          <input
+          <Label className="ladal">Name</Label>
+          <Input
             classNameName="Pay-input"
             type="text"
             id="name"
             placeholder="Enter Cardholder's Full Name"
           />
         </div>
-        <input
+        <Input
           classNameName="Pay-input"
           onClick={handleClick}
           type="submit"
           value="PAY"
         />
-      </form>
-    </div>
+      </Form>
+    </Box>
   );
 }
 
