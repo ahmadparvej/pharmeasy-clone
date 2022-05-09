@@ -3,7 +3,7 @@ import { getDataReducer } from "./Products/Reducer";
 import thunk from 'redux-thunk';
 import { signUpReducer } from "./Signup/reducer";
 import { loginReducer } from "./Login/reducer";
-
+import { cartCountReducer } from "./Cart/reducer";
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -16,7 +16,7 @@ const enhancer = composeEnhancers(
   applyMiddleware(thunk),
   // other store enhancers if any
 );
-const rootReducer = combineReducers({loginState:loginReducer,signupState:signUpReducer,getDataReducer})
+const rootReducer = combineReducers({loginState:loginReducer,signupState:signUpReducer,getDataReducer,cartCountReducer})
 
 // const mainReducer = combineReducers({
 //   loginState : loginReducer,

@@ -71,9 +71,10 @@ export const SingleProdCategory = () => {
                 setHeading(elem.categoryName)
                 return elem.items;
             }
+            return elem;
         })
         setProds(newData)
-    }, [])
+    }, [data,id])
     return (
         <StyledContainer>
             <FilterArea>

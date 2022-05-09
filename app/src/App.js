@@ -26,11 +26,13 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/addtocart" element={<AddToCart />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/otp" element={<OTP />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/payment" element={<Payment />} />
+        
       </Routes>
       <Footer />
+      
     </div>
   );
 }

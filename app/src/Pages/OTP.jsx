@@ -4,6 +4,7 @@ import "./OTP.css";
 
 class Otpinput extends React.Component {
   // navigate = this.useNavigate()
+
   constructor(props) {
     super(props);
     this.state = {
@@ -29,6 +30,8 @@ class Otpinput extends React.Component {
     event.preventDefault();
     // this.Navigate("success");
     // window.location('success')
+    // onClick={()=> this.props.history.push('/')}
+    this.props.history.push("/");
   }
 
   inputfocus = (elmnt) => {
@@ -54,10 +57,10 @@ class Otpinput extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <h3>Mobile phone verification</h3>
             <div>
-              <p class="text">
+              <p className="text">
                 Enter the code we just send on your mobile phone
               </p>
-              <p class="num_resend">+91 *******233</p>
+              <p className="num_resend">+91 *******233</p>
             </div>
 
             <div className="otpContainer">
@@ -120,13 +123,17 @@ class Otpinput extends React.Component {
               />
             </div>
             <div className="btn">
-              <button className="primary" type="submit">
+              <button
+                className="primary"
+                type="submit"
+                // onClick={() => this.props.history.push("/")}
+              >
                 Submit
               </button>
             </div>
             <div>
-              <p class="text">Don't receive the code?</p>
-              <p class="num_resend">Resend</p>
+              <p className="text">Don't receive the code?</p>
+              <p className="num_resend">Resend</p>
             </div>
           </form>
         </div>

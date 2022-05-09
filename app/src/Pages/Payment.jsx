@@ -1,45 +1,83 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Payment.css";
+import { Box, Form, Input, Label } from "./PaymentStyles";
 
-export const ProductDisplay = () => (
-  <section>
-    <div className="product">
-      <img
-        src="https://i.imgur.com/EHyR2nP.png"
-        alt="The cover of Stubborn Attachments"
-      />
-      <div className="description">
-        <h3>Stubborn Attachments</h3>
-        <h5>$20.00</h5>
-      </div>
-    </div>
-    <form action="/create-checkout-session" method="POST">
-      <button type="submit">Checkout</button>
-    </form>
-  </section>
-);
+function Payment() {
+  const navigate = useNavigate();
 
-const Message = ({ message }) => (
-  <section>
-    <p>{message}</p>
-  </section>
-);
+  const handleClick = () => {
+    navigate("/otp");
+  };
 
-export default function Payment() {
-  const [message, setMessage] = useState("");
+  return (
+    <Box>
+      <Form>
+        <h3>Enter Card Details</h3>
+        <div className="Pay-nav-bar"></div>
+        <div className="all">
+          <Label className="ladal">Card Number</Label>
+          <Input
+            classNameName="Pay-input"
+            type="number"
+            placeholder="Card Number"
+            id="cardnum"
+            maxlength="9"
+          />
+        </div>
+        <div>
+          <Label className="ladal">Expiry Date</Label>
+          <div className="all" id="Paydatediv">
+            <Input
+              classNameName="Pay-input"
+              type="text"
+              id="month"
+              placeholder="MM"
+              maxlength="2"
+              oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+            />
+            <p id="Payslash">/</p>
+            <Input
+              classNameName="Pay-input"
+              type="text"
+              id="year"
+              placeholder="YY"
+              maxlength="2"
+              oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+            />
+          </div>
+        </div>
 
-  useEffect(() => {
-    const query = new URLSearchParams(window.location.search);
+        <div className="all">
+          <Label className="ladal">CVV</Label>
+          <Input
+            classNameName="Pay-input"
+            type="text"
+            id="cvv"
+            placeholder="•••"
+            maxlength="3"
+            oninput="this.value=this.value.replace(/[^000-999]/g,'');"
+          />
+        </div>
 
-    if (query.get("success")) {
-      setMessage("Order placed! You will receive an email confirmation.");
-    }
-
-    if (query.get("canceled")) {
-      setMessage(
-        "Order canceled -- continue to shop around and checkout when you're ready."
-      );
-    }
-  }, []);
-
-  return message ? <Message message={message} /> : <ProductDisplay />;
+        <div className="all">
+          <Label className="ladal">Name</Label>
+          <Input
+            classNameName="Pay-input"
+            type="text"
+            id="name"
+            placeholder="Enter Cardholder's Full Name"
+          />
+        </div>
+        <Input
+          classNameName="Pay-input"
+          onClick={handleClick}
+          type="submit"
+          value="PAY"
+        />
+      </Form>
+    </Box>
+  );
 }
+
+export default Payment;
