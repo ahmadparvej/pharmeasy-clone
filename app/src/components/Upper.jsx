@@ -37,7 +37,7 @@ const Upper = () => {
       </div>
       <div className={Styles.upper_lower}>
            <img className={Styles.upper_image2} src='https://assets.pharmeasy.in/web-assets/dist/e3db129c.png' alt='logo'/>
-           <h4>Save flat 5% extra on medicines & enjoy free delivery with plus membership</h4>
+           <h5 className={Styles.upper_line2}>Save flat 5% extra on medicines & enjoy free delivery with plus membership</h5>
            <img className={Styles.upper_image3} src='https://assets.pharmeasy.in/web-assets/dist/b20b0932.png' alt='logo'/>
       </div>
     </div>
