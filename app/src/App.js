@@ -10,7 +10,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import OTP from "./Pages/OTP"
 import Success from "./Pages/Success";
-import Payment from "./Pages/Payment";
+import {Payment} from "./Pages/Payment";
 import { useDispatch } from "react-redux";
 import {getData} from './Redux/Products/Action';
 import { Cart } from "./components/Cart";
@@ -35,8 +35,8 @@ function App() {
         <Route path="/addtocart" element={<AddToCart />} />
         <Route path="/otp" element={<OTP />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/payment" element={<Payment />} />
         <Route path="/cart" element={<Cart/>}/>
+        <Route path="/cart/payment" element={<Payment />} />
       </Routes>
       <Footer />
     </div>

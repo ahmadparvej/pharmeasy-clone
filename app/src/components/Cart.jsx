@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 const DIV = styled.div`
 border-radius: 6px;
 border: 1px solid #dfe3e6;
@@ -39,6 +40,7 @@ const CartValueContainer = styled.div`
     flex-direction:column;
     gap:20px;`
 export const Cart = () => {
+    let navigate = useNavigate();
     const items = JSON.parse(localStorage.getItem("cart"));
     let sum=0
     items.forEach(element => {
@@ -69,7 +71,7 @@ export const Cart = () => {
             <div>----------------------------------------</div>
             <CartValueDiv><p>Cart value</p><p>₹  {sum}</p></CartValueDiv>
             <CartValueDiv><strong><span>Amount to be paid</span></strong><span>₹ {sum}</span> </CartValueDiv>
-            <StyledButton>Place Order</StyledButton>
+            <StyledButton onClick={()=>navigate("/cart/payment")}>Place Order</StyledButton>
         </CartValueContainer>
     </Container>
   )
