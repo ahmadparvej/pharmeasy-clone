@@ -38,10 +38,10 @@ export const Payment=()=> {
                 </div>
 
                 {/* <!-- Text input --> */}
-                <div class="form-outline mb-2">
+                {/* <div class="form-outline mb-2">
                   <input type="text" id="form7Example3" class="form-control" />
                   <label class="form-label" for="form7Example3">Company name</label>
-                </div>
+                </div> */}
 
                 {/* <!-- Text input --> */}
                 <div class="form-outline mb-2">
@@ -116,11 +116,11 @@ export const Payment=()=> {
         <div className="all">
           <Label >Card Number</Label>
           <Input
+            required
             classNameName="Pay-input"
             type="number"
             placeholder="Card Number"
             maxLength="9"
-            required
           />
         </div>
         <div>
