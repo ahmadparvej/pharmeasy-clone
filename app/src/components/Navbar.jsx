@@ -9,6 +9,9 @@ const Navbar = () => {
   const handlSignup = ()=>{
     navigate("/Signup")
   }
+  const handlHome=()=>{
+    navigate("/");
+  }
   const count = useSelector(state=>state.cartCountReducer.count);
   return (
     <div className={Styles.navbar}>
@@ -18,6 +21,7 @@ const Navbar = () => {
             className={Styles.main_logo}
             src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
             alt="logo"
+            onClick={()=>handlHome()}
           ></img>
         
         <div className={Styles.inputBox}>
