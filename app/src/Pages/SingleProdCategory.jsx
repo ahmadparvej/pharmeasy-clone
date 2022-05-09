@@ -13,6 +13,7 @@ export const SingleProdCategory = () => {
     const [val, setVal] = React.useState(0);
     const [priceLimit,setPriceLimit] = React.useState(900000000);
     const navigate = useNavigate()
+    
     React.useEffect(() => {
         let newData;
         data.filter((elem) => {

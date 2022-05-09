@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import "./Payment.css";
 import { Box, Form, Input, Label, DIV } from "./PaymentStyles";
