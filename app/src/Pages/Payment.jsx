@@ -1,10 +1,17 @@
 import React from 'react'
 import styled from "styled-components";
-const DIV = styled.div`
-    width:80%;
-    margin: 40px auto;`
-export const Payment = () => {
+import { useNavigate } from "react-router-dom";
+import "./Payment.css";
+import { Box, Form, Input, Label, DIV } from "./PaymentStyles";
+export const Payment=()=> {
+  let total = localStorage.getItem("total");
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/success");
+  };
   return (
+    <>
+ 
     <DIV>
       <div class="row">
         <div class="col-md-8 mb-2">
@@ -81,7 +88,7 @@ export const Payment = () => {
               <ul class="list-group list-group-flush">
                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                   Products
-                  <span>$53.98</span>
+                  <span>{total}</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                   Shipping
@@ -94,17 +101,80 @@ export const Payment = () => {
                       <p class="mb-0">(including VAT)</p>
                     </strong>
                   </div>
-                  <span><strong>$53.98</strong></span>
+                  <span><strong>{total}</strong></span>
                 </li>
               </ul>
-
-              <button type="button" class="btn btn-primary btn-lg btn-block">
-                Make purchase
-              </button>
             </div>
           </div>
         </div>
       </div>
     </DIV>
+    <Box>
+      <Form>
+        <h3>Enter Card Details</h3>
+        <div className="Pay-nav-bar"></div>
+        <div className="all">
+          <Label className="ladal">Card Number</Label>
+          <Input
+            classNameName="Pay-input"
+            type="number"
+            placeholder="Card Number"
+            id="cardnum"
+            maxlength="9"
+          />
+        </div>
+        <div>
+          <Label className="ladal">Expiry Date</Label>
+          <div className="all" id="Paydatediv">
+            <Input
+              classNameName="Pay-input"
+              type="text"
+              id="month"
+              placeholder="MM"
+              maxlength="2"
+              oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+            />
+            <p id="Payslash">/</p>
+            <Input
+              classNameName="Pay-input"
+              type="text"
+              id="year"
+              placeholder="YY"
+              maxlength="2"
+              oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+            />
+          </div>
+        </div>
+
+        <div className="all">
+          <Label className="ladal">CVV</Label>
+          <Input
+            classNameName="Pay-input"
+            type="text"
+            id="cvv"
+            placeholder="•••"
+            maxlength="3"
+            oninput="this.value=this.value.replace(/[^000-999]/g,'');"
+          />
+        </div>
+
+        <div className="all">
+          <Label className="ladal">Name</Label>
+          <Input
+            classNameName="Pay-input"
+            type="text"
+            id="name"
+            placeholder="Enter Cardholder's Full Name"
+          />
+        </div>
+        <Input
+          classNameName="Pay-input"
+          onClick={handleClick}
+          type="submit"
+          value="PAY"
+        />
+      </Form>
+    </Box>
+  </>    
   )
-}
+  }

@@ -46,6 +46,7 @@ export const Cart = () => {
     items.forEach(element => {
         sum=sum+element.price;
     });
+    localStorage.setItem("total",sum);
   return (
     <Container>
         <ItemDiv>
