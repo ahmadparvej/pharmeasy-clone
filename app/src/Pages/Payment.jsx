@@ -110,27 +110,25 @@ export const Payment=()=> {
       </div>
     </DIV>
     <Box>
-      <Form>
+      <Form onSubmit={(e)=>e.preventDefault()}>
         <h3>Enter Card Details</h3>
         <div className="Pay-nav-bar"></div>
         <div className="all">
-          <Label className="ladal">Card Number</Label>
+          <Label >Card Number</Label>
           <Input
             classNameName="Pay-input"
             type="number"
             placeholder="Card Number"
-            id="cardnum"
             maxLength="9"
             required
           />
         </div>
         <div>
-          <Label className="ladal">Expiry Date</Label>
+          <Label>Expiry Date</Label>
           <div className="all" id="Paydatediv">
             <Input
               classNameName="Pay-input"
               type="text"
-              id="month"
               placeholder="MM"
               maxLength="2"
               oninput="this.value=this.value.replace(/[^00-99]/g,'');"
@@ -140,7 +138,6 @@ export const Payment=()=> {
             <Input
               classNameName="Pay-input"
               type="text"
-              id="year"
               placeholder="YY"
               maxLength="2"
               oninput="this.value=this.value.replace(/[^00-99]/g,'');"
@@ -150,11 +147,10 @@ export const Payment=()=> {
         </div>
 
         <div className="all">
-          <Label className="ladal">CVV</Label>
+          <Label >CVV</Label>
           <Input
             classNameName="Pay-input"
             type="text"
-            id="cvv"
             placeholder="•••"
             maxLength="3"
             onInput="this.value=this.value.replace(/[^000-999]/g,'');"
@@ -163,11 +159,10 @@ export const Payment=()=> {
         </div>
 
         <div className="all">
-          <Label className="ladal">Name</Label>
+          <Label>Name</Label>
           <Input
             classNameName="Pay-input"
             type="text"
-            id="name"
             placeholder="Enter Cardholder's Full Name"
             required
           />
