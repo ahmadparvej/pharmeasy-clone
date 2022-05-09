@@ -1,18 +1,20 @@
 import React from 'react'
 import FooterHome from '../components/FooterHome'
 import FooterMiddle from '../components/FooterMiddle'
-// import Navbar from "../components/Navbar"
 import DemoCarousel from '../components/Slider'
+import { DealsOfTheDay } from "../components/DealsOfTheDay";
+import {useDispatch} from 'react-redux'
+import {getData} from '../Redux/Products/Action'
 import Upper from '../components/Upper'
 import SwipeToSlide from './MiddleSlider'
 
 const Homepage = () => {
   return (
     <div>
-      {/* <Navbar/> */}
       <DemoCarousel/>
       <Upper/>
       <SwipeToSlide/>
+      <DealsOfTheDay/>
       <FooterHome/>
       <FooterMiddle/>
     </div>

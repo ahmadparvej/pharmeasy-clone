@@ -9,7 +9,9 @@ export const Box = styled.div`
   align-items: center;
   background-color: #eaeaf0;
 `;
-
+export const DIV = styled.div`
+width:80%;
+margin: 40px auto;`
 export const Form = styled.form`
   box-sizing: border-box;
   display: grid;
@@ -48,7 +50,7 @@ export const Input = styled.input`
 `;
 
 export const Label = styled.label`
-  position: relative;
+  // position: relative;
   top: 10px;
   left: 10px;
   color: #004caf;
