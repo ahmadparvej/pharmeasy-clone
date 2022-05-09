@@ -22,7 +22,8 @@ function Payment() {
             type="number"
             placeholder="Card Number"
             id="cardnum"
-            maxlength="9"
+            maxLength="9"
+            required
           />
         </div>
         <div>
@@ -33,8 +34,9 @@ function Payment() {
               type="text"
               id="month"
               placeholder="MM"
-              maxlength="2"
+              maxLength="2"
               oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+              required
             />
             <p id="Payslash">/</p>
             <Input
@@ -42,8 +44,9 @@ function Payment() {
               type="text"
               id="year"
               placeholder="YY"
-              maxlength="2"
+              maxLength="2"
               oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+              required
             />
           </div>
         </div>
@@ -55,8 +58,9 @@ function Payment() {
             type="text"
             id="cvv"
             placeholder="•••"
-            maxlength="3"
-            oninput="this.value=this.value.replace(/[^000-999]/g,'');"
+            maxLength="3"
+            onInput="this.value=this.value.replace(/[^000-999]/g,'');"
+            required
           />
         </div>
 
@@ -67,6 +71,7 @@ function Payment() {
             type="text"
             id="name"
             placeholder="Enter Cardholder's Full Name"
+            required
           />
         </div>
         <Input
@@ -74,6 +79,7 @@ function Payment() {
           onClick={handleClick}
           type="submit"
           value="PAY"
+          required
         />
       </Form>
     </Box>
