@@ -1,25 +1,22 @@
 .navbar {
   background-color: rgb(16, 132, 126);
-  height: 130px;
- 
   position: sticky; 
-  /* top: 0; */
   width: 101%;
   margin-top: -10px;
   margin-left: -4px;
 }
 .container_navbar {
   display: flex;
-  /* overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%; */
-  margin-left: 100px;
-  padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+*:focus {
+  outline: none;
 }
 .inputBox {
   background-color: white;
-  height: 50px;
+  padding: 6px;
   width: 60%;
   display: flex;
   margin-left: 50px;
@@ -30,50 +27,44 @@
 }
 
 .pincode {
-  height: 45px;
-  font-size: 18px;
   width: 24%;
   border: none;
   margin-left: 10px;
 }
 .searchbar {
-  height: 45px;
   width: 67%;
-  font-size: 18px;
   margin-left: 10px;
   border: none;
 }
 .straightbar {
-  margin-top: 2px;
-  color: rgb(232, 228, 228);
+  width: 1px;
+  background: rgb(232, 228, 228);
   margin-left: 10px;
 }
 .Container2_navbar {
+  width: 80%;
   display: flex;
-
-  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10px 0 0 20%;
 }
 .navbar_products {
   display: flex;
   color: white;
   font-family: sans-serif;
-
-  margin-left: 300px;
+  /* margin:10px auto; */
 }
 .products_line {
-  margin-left: 30px;
-  cursor: pointer;
-}
-.products_line {
+  margin-left: 25px;
+  font-size: 13px;
   display: flex;
+  cursor: pointer;
 }
 .navbar_products2 {
   display: flex;
   color: white;
   font-family: sans-serif;
-
-  margin-left: 300px;
-  width: 400px;
+  margin-right: 10%;
 }
 .side_logo {
   height: 30px;

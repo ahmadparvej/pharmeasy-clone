@@ -1,8 +1,6 @@
 import React from 'react'
 import { getData } from '../Redux/Products/Action'
 import { useDispatch, useSelector } from 'react-redux'
-import { nanoid } from 'nanoid';
-import {useNavigate} from 'react-router-dom'
 import { ProdCategory } from "./ProdCategory";
 import styled from 'styled-components'
 const StyledProdList = styled.div`
@@ -11,11 +9,10 @@ const StyledProdList = styled.div`
     gap:10px;
     margin:20px 10%`
 export const HealthCareProducts = () => {
-    const navigate = useNavigate(); 
     const dispatch = useDispatch();
     const { data } = useSelector((state) => state.getDataReducer);
     React.useEffect(() => {
-        dispatch(getData())
+        getData(dispatch)
     }, [dispatch])
     return (
         <div>
