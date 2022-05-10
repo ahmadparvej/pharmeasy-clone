@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Product } from "./Product";
 import { StyledContainer,FilterArea,Styledform,SingleProdCatTitle,ProductsArea,StyledSelect,SingleProdGridDiv } from "./styled";
 
@@ -12,7 +12,7 @@ export const SingleProdCategory = () => {
     const [heading, setHeading] = React.useState("Products");
     const [val, setVal] = React.useState(0);
     const [priceLimit,setPriceLimit] = React.useState(900000000);
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     
     React.useEffect(() => {
         let newData;
