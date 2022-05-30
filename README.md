@@ -13,6 +13,10 @@ GitHub repository link : https://github.com/ahmadparvej/pharmeasy-clone
 
 Netlify Link :
 
+Screenshots:
+
+![screenshots](https://i.ibb.co/1rh6mKG/Screenshot-10.png)
+
 Challenges:
 
 As this was my second collaborative project, We(team) faced a lot of challenges. Collecting data API’s was challenging for us we does not found any such API related to our project, we create own API and deploy on live server. Responsiveness is important part of web building, We were got stuck at many points of responsive feature of website. But we were able tackle all these problems in this week.
