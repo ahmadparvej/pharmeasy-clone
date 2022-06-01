@@ -1,10 +1,9 @@
 # Clonning of pharmeasy.com
 
 Hello, I am going to talk about the pharmeasy.com clone, a website that we built up for our Unit-4 construct week project task at Masai school. Website development is fun when all the team members collaborate and make a good website. Let me introduce you to my team-mates/collaborators :
-
-Chiranjit Behera
-Thakur Suraj Bhan Singh
-Shaikh Shakeer
+Chiranjit Behera,
+Thakur Suraj Bhan Singh,
+Shaikh Shakeer,
 Me: Parvej Ahmad.
 Original website link : https://pharmeasy.in/
 
