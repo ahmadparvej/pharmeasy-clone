@@ -27,7 +27,8 @@ const Navbar = () => {
             className={Styles.pincode}
             type="type"
             placeholder="Select Pincode"
-             pattern="[0-9]{6}"
+            pattern="[0-9]{6}"
+            maxLength={6}
           ></input>
           <div className={Styles.straightbar}></div>
           <input

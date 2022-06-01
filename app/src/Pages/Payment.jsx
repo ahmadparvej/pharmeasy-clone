@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import "./Payment.css";
 import { Box, Form, Input, Label, DIV } from "./PaymentStyles";
@@ -38,10 +37,10 @@ export const Payment=()=> {
                 </div>
 
                 {/* <!-- Text input --> */}
-                <div class="form-outline mb-2">
+                {/* <div class="form-outline mb-2">
                   <input type="text" id="form7Example3" class="form-control" />
                   <label class="form-label" for="form7Example3">Company name</label>
-                </div>
+                </div> */}
 
                 {/* <!-- Text input --> */}
                 <div class="form-outline mb-2">
@@ -110,61 +109,61 @@ export const Payment=()=> {
       </div>
     </DIV>
     <Box>
-      <Form>
+      <Form onSubmit={(e)=>e.preventDefault()}>
         <h3>Enter Card Details</h3>
         <div className="Pay-nav-bar"></div>
         <div className="all">
-          <Label className="ladal">Card Number</Label>
+          <Label >Card Number</Label>
           <Input
+            required
             classNameName="Pay-input"
             type="number"
             placeholder="Card Number"
-            id="cardnum"
-            maxlength="9"
+            maxLength="9"
           />
         </div>
         <div>
-          <Label className="ladal">Expiry Date</Label>
+          <Label>Expiry Date</Label>
           <div className="all" id="Paydatediv">
             <Input
               classNameName="Pay-input"
               type="text"
-              id="month"
               placeholder="MM"
-              maxlength="2"
+              maxLength="2"
               oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+              required
             />
             <p id="Payslash">/</p>
             <Input
               classNameName="Pay-input"
               type="text"
-              id="year"
               placeholder="YY"
-              maxlength="2"
+              maxLength="2"
               oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+              required
             />
           </div>
         </div>
 
         <div className="all">
-          <Label className="ladal">CVV</Label>
+          <Label >CVV</Label>
           <Input
             classNameName="Pay-input"
             type="text"
-            id="cvv"
             placeholder="•••"
-            maxlength="3"
-            oninput="this.value=this.value.replace(/[^000-999]/g,'');"
+            maxLength="3"
+            onInput="this.value=this.value.replace(/[^000-999]/g,'');"
+            required
           />
         </div>
 
         <div className="all">
-          <Label className="ladal">Name</Label>
+          <Label>Name</Label>
           <Input
             classNameName="Pay-input"
             type="text"
-            id="name"
             placeholder="Enter Cardholder's Full Name"
+            required
           />
         </div>
         <Input
@@ -172,6 +171,7 @@ export const Payment=()=> {
           onClick={handleClick}
           type="submit"
           value="PAY"
+          required
         />
       </Form>
     </Box>
