@@ -16,7 +16,7 @@ const Upper = () => {
           </div>
           <div className={Styles.upper_main}>
               <div className={Styles.upper_middle} style={{backgroundColor:"rgb(253,242,210)"}}>
-                  <h4 className={Styles.upper_line}>Order Medicine</h4>
+                  <h4 className={Styles.upper_line}>Healthcare Products</h4>
                   <img className={Styles.upper_image} src='https://assets.pharmeasy.in/web-assets/dist/c7c7095b.png?dim=186x0&dpr=1.25&q=100' alt='logo'/>
               </div>
               <div>
@@ -25,7 +25,7 @@ const Upper = () => {
           </div>
           <div className={Styles.upper_main}>
               <div className={Styles.upper_middle} style={{backgroundColor:"rgb(214,240,255)"}}>
-                  <h4 className={Styles.upper_line}>Order Medicine</h4>
+                  <h4 className={Styles.upper_line}>Lab Tests</h4>
                   <img className={Styles.upper_image} src='https://assets.pharmeasy.in/web-assets/dist/e1d3ac1c.png?dim=186x0&dpr=1.25&q=100' alt='logo'/>
               </div>
               <div>

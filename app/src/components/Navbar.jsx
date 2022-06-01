@@ -13,7 +13,6 @@ const Navbar = () => {
   }
   const count = useSelector(state=>state.cartCountReducer.count);
   const login = useSelector(state=>state.loginState.showlogin);
-  console.log(login);
   return (
     <div className={Styles.navbar}>
       <div className={Styles.container_navbar}>
