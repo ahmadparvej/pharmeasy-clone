@@ -4,6 +4,7 @@ Hello, I am going to talk about the pharmeasy.com clone, a website that we built
 Chiranjit Behera,
 Thakur Suraj Bhan Singh,
 Shaikh Shakeer,
+Krishna Kumar Gupta,
 Me: Parvej Ahmad.
 
 Original website link : https://pharmeasy.in/
