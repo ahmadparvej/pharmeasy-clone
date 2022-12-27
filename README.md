@@ -11,7 +11,7 @@ Original website link : https://pharmeasy.in/
 
 GitHub repository link: https://github.com/ahmadparvej/pharmeasy-clone
 
-Netlify Link: https://pharmeasy-clone-website.netlify.app/
+Netlify Link: https://pharmeasy-clone-websit.netlify.app/
 
 ###Thumbnail
 ![thumbnail](https://github.com/ahmadparvej/pharmeasy-clone/blob/main/app/src/Thumbnail/screenshot.png)
